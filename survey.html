@@ -10,26 +10,26 @@
   </head>
 
   <body>
-    <div class="main-nav">
+    <nav role="navigation">
       <ul class="nav">
         <li class="name"><a href="index.html">Accessible Frog</a></li>
         <li><a href="tour.html">Tour</a></li>
         <li><a href="#">Survey</a></li>
       </ul>
-    </div>
+    </nav>
 
-    <header>
+    <header role="banner">
       <h1>ACCESSIBLE FROG</h1>
-      <h3>we make awesome music</h3>
+      <h2>we make awesome music</h2>
     </header>
 
-    <main>
+    <main role="main">
       <h1>Survey</h1>
       <div class="card">
         <div class="flex">
           <img class="photo" src= "img/concert01.jpg" alt="people dancing at concert">
           <div class="container">
-            <form class = "survey">
+            <form class = "survey" role="form">
               <fieldset>
                 <legend>Who is your favorite band member:</legend>
                 <input type="radio" name="res" value="John" id="john">
@@ -55,7 +55,6 @@
                   <option value="8">Song For Yesterday</option>
                   <option value="10">Street Of The Rider</option>
                   <option value="11">This Is For You</option>
-
                 </select>
               </fieldset>
               <fieldset>
@@ -71,12 +70,13 @@
         <div class="flex">
           <img class="photo" src= "img/the_band.jpg" alt="band playing at concert">
             <div class="container">
-              <form class="newsletter">
+              <form class="newsletter" role="form">
                 <fieldset class="newsletter">
                   <label for="name">Name:</label><input type ="text" name="textfield" id="name"><br>
                   <label for="email">Email:</label><input type ="email" name="textfield" id="email"><br>
-                  <label for="email2">Retype Email:<input type ="email" name="textfield" id="email2"></label>
-                  <button type="submit">Sign Up</button>
+                  <label for="email2">Retype Email:<input type ="email" name="textfield" id="email2"></label><br>
+                  <button type="submit" aria-describedby="info">Sign Up</button>
+                  <p id="info">By signing up you are allowing us to send you any news and updates about upcoming albums or performances.</p>
                 </fieldset>
               </form>
             </div>
@@ -84,7 +84,7 @@
       </div>
     </main>
 
-    <footer>
+    <footer role="contentinfo">
       <ul>
         <li><a href="#" class="social twitter"><img src="img/twitter-32.png" alt="twitter link"></a></li>
         <li><a href="#" class="social youtube"><img src="img/youtube-32.png" alt="youtube link"></a></li>
